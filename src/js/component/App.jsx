@@ -1,7 +1,7 @@
 import React from 'react';
 import Test from './test';
 import Hr from './hrtest';
-import Modal from './ModalConductor'
+
 
 class App extends React.Component{
    
@@ -17,7 +17,8 @@ class App extends React.Component{
                     
                     <Test/>
                     <Hr/>
-                    <Modal/>
+              
+                    <h3>123</h3>
                 </div>
             )
         
