@@ -2,6 +2,7 @@ import React from 'react';
 import Test from './test';
 import Hr from './hrtest';
 import Playground from './playground';
+import Nothing from './nothing';
 
 export default class App extends React.Component{ 
     render() {
@@ -13,6 +14,7 @@ export default class App extends React.Component{
                <Test/>
                <Hr/>
                <Playground/>
+               <Nothing username="pwh" />
             </div>
         )       
     }
