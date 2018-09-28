@@ -16,6 +16,7 @@ export default class Test extends React.Component{
     handleClick(){
         return alert(123)
     }
+
     render() {
         const {name} = this.state
         //const {somethng} = this.proop
