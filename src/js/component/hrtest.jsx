@@ -1,9 +1,19 @@
 import React, {Component} from 'react'
 
+const lists = ['a','b','c','d'];
 export default class Hrtest extends Component{
     render() {
         return(
-            <title>123</title>
+            <ul>
+                123
+                {
+                    lists.map((result) => {
+                        return (
+                            <li>{result}</li>
+                        )
+                    })
+                }
+            </ul>
         )
     }
 }
