@@ -4,6 +4,7 @@ const lists = ['a','b','c','d'];
 export default class Hrtest extends Component{
     render() {
         return(
+<<<<<<< HEAD
             <ul>
                 123
                 {
@@ -14,6 +15,9 @@ export default class Hrtest extends Component{
                     })
                 }
             </ul>
+=======
+            <h1>123</h1>
+>>>>>>> e20409253a86fc4fb9b06282ce1640abb30b727d
         )
     }
 }
