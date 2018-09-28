@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Test from './test';
 import Hr from './hrtest';
@@ -29,3 +30,10 @@ class App extends React.Component{
 
 export default App
       
+=======
+export default () => (
+    <div>
+        Hello world!sdfsdfsdfsd
+    </div>
+)
+>>>>>>> parent of 5941913... update
