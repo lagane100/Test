@@ -1,4 +1,5 @@
 import React from 'react';
+import Editbutton from './editbutton'
 
 
 
@@ -14,7 +15,7 @@ export default class Test extends React.Component{
     }
 
     handleClick(){
-        return alert(123)
+        return <Editbutton/>
     }
 
     render() {
