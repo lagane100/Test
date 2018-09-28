@@ -1,6 +1,7 @@
 import React from 'react';
 import Test from './test';
 import Hr from './hrtest';
+import Playground from './playground';
 
 export default class App extends React.Component{ 
     render() {
@@ -11,6 +12,7 @@ export default class App extends React.Component{
                 <h1>123</h1><h2>456</h2>
                <Test/>
                <Hr/>
+               <Playground/>
             </div>
         )       
     }
