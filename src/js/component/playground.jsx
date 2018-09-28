@@ -17,9 +17,11 @@ export default class LikeButton extends Component{
     render(){
         const text = this.state.liked ? 'like' : 'haven\'t liked';
         return(
-            <p onClick={this.handleClick.bind(this)}>
-                You {text} this. Click to toggle.
-            </p>
+            <div>
+                <p onClick={this.handleClick.bind(this)}>
+                    You {text} this. Click to toggle.
+                </p>
+            </div>
         );
     }
 }
