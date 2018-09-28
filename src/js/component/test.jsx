@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 export default class Test extends React.Component{
     constructor(props){
         super(props)
@@ -22,17 +20,14 @@ export default class Test extends React.Component{
     render() {
         const {name} = this.state
         //const {somethng} = this.proop
-            return (
-                
-                <div>
-                    <button onClick={this.handleClick}>
-                        {this.state.isON ? 'ON' : 'OFF'}
-                    </button>
-                    <p>Hello, {name}{this.state.count}!</p>
-                </div>  
-            )
-        
-        
+        return (       
+            <div>
+                <button onClick={this.handleClick}>
+                    {this.state.isON ? 'ON' : 'OFF'}
+                </button>
+                <p>Hello, {name}{this.state.count}!</p>
+            </div>  
+        ) 
     }
 }
 
