@@ -11,7 +11,7 @@ class App extends React.Component{
        // const {somethng} = this.proop
             return (
                 <div className="message">
-                    <h1>123</h1><h2>456</h2>
+                    <h1>123456</h1><h2>456</h2>
                     
                     
                     <Test/>
