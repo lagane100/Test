@@ -1,0 +1,7 @@
+.vscode
+node_modules
+build/index.html
+build/css/*
+!build/css/lib
+build/js/*
+!build/js/lib
