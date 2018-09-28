@@ -1,6 +1,8 @@
+<<<<<<< HEAD
 import React from 'react';
 import Test from './test';
 import Hr from './hrtest';
+import Modal from './ModalConductor'
 
 class App extends React.Component{
    
@@ -16,6 +18,7 @@ class App extends React.Component{
                     
                     <Test/>
                     <Hr/>
+                    <Modal/>
                 </div>
             )
         
@@ -27,3 +30,10 @@ class App extends React.Component{
 
 export default App
       
+=======
+export default () => (
+    <div>
+        Hello world!sdfsdfsdfsd
+    </div>
+)
+>>>>>>> parent of 5941913... update
