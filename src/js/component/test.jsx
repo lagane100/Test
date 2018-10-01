@@ -19,7 +19,7 @@ export default class Test extends React.Component{
 
     render() {
         const {name} = this.state
-        //const {somethng} = this.proop
+        //const {somethng} = this.props
         return (       
             <div>
                 <button onClick={this.handleClick}>
