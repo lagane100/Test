@@ -1,26 +1,32 @@
 import React from 'react';
 
-import ModalWrapper from './ModalWrapper';
 
-const SignIn = props => {
-  const signIn = provider => {
-    props.hideModal();
-    props.signIn(provider);
-  };
+class SignIn extends React.Component{
+  constructor(props){
+    super(props)
+    this.closebutton = this.closebutton.bind(this);
+  }
 
-  return (
-    <ModalWrapper
-      {...props}
-      title="Sign in"
-      width={400}
-      showOk={false}
-    >
-      <p>Choose your flavor</p>
-      <button onClick={() => signIn('facebook')}>Facebook</button>
-      <button onClick={() => signIn('google')}>Google</button>
-      <button onClick={() => signIn('twitter')}>Twitter</button>
-    </ModalWrapper>
-  );
-};
+  closebutton(){
+    
+  }
+
+
+  render(){
+    const {visible} = this.props;
+    return visible &&
+    <div className="modal-wrapper">
+      <div className="modal">
+        <div className="modal-title">123</div>
+        <div className="modal-content">456</div>
+        <div className="modal-operator">
+          <button className="modal-operator-confirm">確認</button>
+          <button className="modal-operator-close" onClick={this.closebutton}>取消</button>
+        </div>
+      </div>
+      <div className="mask"></div>
+    </div>
+  }
+}
 
 export default SignIn;

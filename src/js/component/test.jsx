@@ -1,7 +1,6 @@
 import React from 'react';
+import { Button } from 'reactstrap'
 import Editbutton from './editbutton'
-
-
 
 export default class Test extends React.Component{
     constructor(props){
@@ -9,24 +8,33 @@ export default class Test extends React.Component{
         this.state = {
             name: '123',
             count: '456',
-            buttonName: '編輯'
+            visible: false
         }
-        this.handleClick = this.handleClick.bind(this);
+        this.showModal = this.showModal.bind(this);
     }
 
-    handleClick(){
-        return <Editbutton/>
+    showModal(){
+        this.setState({visible: true})
     }
+    /* openModal(){
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    closeModal() {
+        document.getElementById('editdialog').style.display = "none";
+      } */
 
     render() {
         const {name} = this.state
-        //const {somethng} = this.proop
+        const {visible} = this.state
             return (
                 
                 <div>
-                    <button onClick={this.handleClick}>
+                    
+                    <button id="editbutton" onClick={this.showModal}>
                         編輯
                     </button>
+                    <Editbutton visible={visible}/>
                     <p>Hello, {name}{this.state.count}!</p>
                 </div>  
             )
