@@ -4,6 +4,7 @@ import Hr from './hrtest';
 import Playground from './playground';
 import App2 from './App2';
 import Timer from './Timer';
+import MarkDown from './MarkDown';
 
 export default class App extends React.Component{ 
     render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component{
                <Playground/>
                <App2 />
                <Timer />
+               <MarkDown />
             </div>
         )       
     }
