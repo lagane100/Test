@@ -42,7 +42,6 @@ module.exports = function (env, argv) {
             alias: {
                 Js: path.resolve(__dirname, 'src/js/'),
                 Scss: path.resolve(__dirname, 'src/scss/'),
-                Component: path.resolve(__dirname, 'src/js/component/')
             }
         },
         plugins: [
