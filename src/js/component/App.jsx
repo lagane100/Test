@@ -6,6 +6,7 @@ import App2 from './App2';
 import Timer from './Timer';
 import MarkDown from './MarkDown';
 import Testconst from './Testconst';
+import Ajax_Jquery from './Ajax_Jquery';
 
 export default class App extends React.Component{ 
     render() {
@@ -21,6 +22,7 @@ export default class App extends React.Component{
                <Timer />
                <MarkDown />
                <Testconst name="World"/>
+               <Ajax_Jquery source="https://api.github.com/users/torvalds" />
             </div>
         )       
     }
