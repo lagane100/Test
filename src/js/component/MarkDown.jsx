@@ -1,4 +1,5 @@
 import React from 'react';
+import Remarkable from 'remarkable';
 
 export default class MarkDown extends React.Component{
     constructor(props){
