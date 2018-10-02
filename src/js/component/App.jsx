@@ -1,7 +1,11 @@
 import React from 'react';
 import Test from './test';
 import Hr from './hrtest';
-
+/* import Leftdiv from 'leftdiv'
+import Carousel from 'carousel'
+<Leftdiv></Leftdiv>
+                    <Carousel></Carousel>
+ */
 class App extends React.Component{
    
     
@@ -11,13 +15,9 @@ class App extends React.Component{
        // const {somethng} = this.proop
             return (
                 <div>
-                    <h1>123456</h1><h2>456</h2>
+                    <Test></Test>
+                    <Hr></Hr>
                     
-                    
-                    <Test/>
-                    <Hr/>
-
-                    <h3>123</h3>
                 </div>
             )
         

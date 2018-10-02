@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button } from 'reactstrap'
+import React  from 'react';
 import Editbutton from './editbutton'
 
 export default class Test extends React.Component{
